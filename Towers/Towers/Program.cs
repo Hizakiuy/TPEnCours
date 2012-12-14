@@ -21,11 +21,11 @@ namespace PrintRectangle
             Console.WriteLine("Bas de la tour");
             string bas = Console.ReadLine();
 
-            Console.WriteLine("File moi le nombre d'etages batard");
+            Console.WriteLine("Combien d'etages");
             int etages = Convert.ToInt32(Console.ReadLine());
             
-            if (etages <= 0)
-                Console.WriteLine("Casse toi bollos");
+            if (etages < 0)
+                Console.WriteLine("Etage negatif...t'es con ou quoi?");
             else
                 Towers(etages, haut, decor, vide, bas);
 
@@ -41,6 +41,7 @@ namespace PrintRectangle
             
             for (int j = 0; j < etages; j++)
             {
+                Console.WriteLine(vide);
                 Console.WriteLine(decor);
             }
             Console.WriteLine(vide);
