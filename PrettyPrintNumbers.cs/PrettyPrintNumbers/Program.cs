@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PrettyPrintNumbers.cs
+namespace PrettyPrintNumbers
 {
     class Program
     {
@@ -13,9 +13,14 @@ namespace PrettyPrintNumbers.cs
             int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Tappes le deuxieme num wesh");//max
             int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Et le pas maggle");//pas
+            Console.WriteLine("Et le pas maggle");           //pas
             int p = Convert.ToInt32(Console.ReadLine());
-            PrintNumbers(a, b, p);//applique fonction
+            
+            if (a > b)
+                Console.WriteLine("Le premier nombre doit être inferieur au deuxieme");
+            else
+                PrintNumbers(a, b, p);//applique fonction //ne marche pas si le pas dépasse la derniere valeur...
+            
             Console.ReadLine();
         }
 

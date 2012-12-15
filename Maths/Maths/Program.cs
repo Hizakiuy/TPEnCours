@@ -9,7 +9,7 @@ namespace Maths
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Multiplication(-3,10));
+            Console.WriteLine(Factorielle(3));
         }
 
         static int Multiplication(int a, int b)
@@ -93,7 +93,7 @@ namespace Maths
             if (n == 1)
                 return 1;
 
-            if (n == 0 || n < 0)
+            if (n <= 0)
                 return 1;
 
             int resultat = n; //variable initiale pour stocker le resultat initialisée à n
